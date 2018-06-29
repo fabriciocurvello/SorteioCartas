@@ -4,11 +4,21 @@
              xmlns:local="clr-namespace:Sorteio"
              x:Class="Sorteio.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Spacing="30" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+        <Label Text="Escolha uma carta" HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+
+            <Button x:Name="BtnCarta1" Clicked="BtnCarta1_Clicked" Text="Carta 1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Button x:Name="BtnCarta2" Clicked="BtnCarta2_Clicked" Text="Carta 2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Button x:Name="BtnCarta3" Clicked="BtnCarta3_Clicked" Text="Carta 3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+
+        </StackLayout>
+
+        <Button x:Name="BtnRestart" Clicked="BtnRestart_Clicked" Text="Restart" HorizontalOptions="CenterAndExpand" />
+        <Label Text="Pontos: 0" x:Name="LbScore" HorizontalOptions="CenterAndExpand" />
+
     </StackLayout>
 
 </ContentPage>
